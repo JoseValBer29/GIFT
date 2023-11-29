@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Regalo Especial</title>
+    <style>
+        body {
+            background-color: #ffdce5; /* Color rosa pastel */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        button {
+            background-color: #da5151; /* Color de fondo rojo */
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efecto de relieve */
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out; /* Efecto de escala al pasar el ratón */
+        }
+        button:hover {
+            transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+        }
+
+        h1{
+            color:#7c2525
+        }
+
+        #miIframe {
+            width: 30%;
+            height: 500px;
+        }
+    </style>
+    <script>
+        function cargarIframe() {
+            document.getElementById('miIframe').src = "https://trinket.io/embed/python/03198a5785?outputOnly=true&runOption=run";
+            document.getElementById('miIframe').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>HOLA AMOR, ESTE ES UN OBSEQUIO PARA TI</h1>
+    <button onclick="cargarIframe()">Recibir</button><br>
+    <iframe id="miIframe" frameborder="0" allowfullscreen style="display: none;"></iframe>
+</body>
+</html>
